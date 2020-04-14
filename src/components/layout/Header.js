@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Header = props => {
+const Header = (props) => {
   //   Destructuring
   const { branding } = props;
   return (
@@ -24,12 +24,12 @@ const Header = props => {
 
 // Default Props
 Header.defaultProps = {
-  branding: "My App"
+  branding: "My App",
 };
 
 // Validations
 Header.propTypes = {
-  branding: PropTypes.string.isRequired
+  branding: PropTypes.string.isRequired,
 };
 
 export default Header;
